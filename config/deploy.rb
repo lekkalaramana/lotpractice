@@ -6,12 +6,13 @@ set :application, "lotpractice"
 set :repo_url, "git@github.com:lekkalaramana/lotpractice.git"
 set :deploy_to, '/var/www/lotpractice'
 set :scm, :git
-set :branch, 'development'
+set :branch, 'master'
 set :keep_releases, 5
 set :format, :pretty
 set :log_level, :debug
 set :pty, true
 # set :rvm_map_bins, %w{rake gem bundle ruby rails}
+set :linked_files, %w{config/master.key}
 set :linked_dirs, %w{pids log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 set :stages, %w(staging production development)
 set :default_stage, "development"

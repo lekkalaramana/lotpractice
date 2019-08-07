@@ -39,7 +39,7 @@ server '54.254.252.106',
  }
 
 set :stage, :production
-set :branch, :development
+set :branch, :master
 set :ssh_options, {:forward_agent => true}
 
 # Setting RAILS_ENV environment variable on server

@@ -33,6 +33,16 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'whenever', require: false
+# Reduces boot times through caching; required in config/boot.rb
+gem 'capistrano'
+gem 'capistrano-chruby'
+# cap tasks to manage puma application server
+gem 'capistrano-rails',   '~> 1.1'
+gem 'capistrano-bundler', '~> 1.1'
+gem 'capistrano-rvm'
+gem 'capistrano-passenger'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 

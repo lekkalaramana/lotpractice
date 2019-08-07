@@ -20,6 +20,11 @@ default: &default
 development:
   <<: *default
   database: lotpractice_development
+  host: 54.254.252.106
+  username: lotpractice
+  password: lotpractice
+  port: 3306
+  pool: 1000
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -50,5 +55,8 @@ test:
 production:
   <<: *default
   database: lotpractice_production
+  host: 54.254.252.106
   username: lotpractice
-  password: <%= ENV['LOTPRACTICE_DATABASE_PASSWORD'] %>
+  password: lotpractice
+  port: 3306
+  pool: 1000
